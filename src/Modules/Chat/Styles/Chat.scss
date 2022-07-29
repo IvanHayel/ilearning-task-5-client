@@ -1,0 +1,76 @@
+.chat {
+  display: block;
+  user-select: none;
+  caret-color: transparent;
+  background-color: whitesmoke;
+  min-height: 80vh;
+
+  .chat-greeting {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3vh;
+    font-weight: bold;
+    color: mediumpurple;
+    text-shadow: white 0 0 15px;
+    text-align: center;
+  }
+
+  .chat-box {
+    display: flex;
+    margin: 2vh auto;
+    height: 65vh;
+    width: 80%;
+    box-shadow: mediumpurple 0 0 15px;
+
+    .chat-box-left {
+      width: 30%;
+      border: rgb(147 112 219 / 40%) solid 2px;
+      padding: 1vh 2px;
+      background-color: rgb(147 112 219 / 10%);
+      overflow: auto;
+
+      .chat-box-search {
+        border-radius: 5px;
+        background-color: whitesmoke;
+      }
+
+      .chat-button {
+        background-color: rgb(147 112 219 / 20%);
+        border: whitesmoke 3px solid;
+
+        &:hover {
+          background-color: rgb(147 112 219 / 40%);
+        }
+      }
+    }
+
+    .chat-box-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: rgb(147 112 219 / 40%) solid 2px;
+      padding: 2vh 0;
+      width: 70%;
+      background-color: rgb(0 0 256 / 5%);
+
+      .message-list {
+        -ms-overflow-style: none;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .chat-box-bottom {
+        display: flex;
+        align-items: center;
+        height: 13%;
+        border-radius: 4px;
+        margin: 1vh;
+        background-color: whitesmoke;
+      }
+    }
+  }
+}
