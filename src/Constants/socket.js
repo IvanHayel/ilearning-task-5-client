@@ -1,5 +1,5 @@
 export const SOCKET = {
-  CONNECT: "http://localhost:8080/ws",
+  CONNECT: "https://ilearning-task-5-server.herokuapp.com/ws",
   PUBLIC: "Public",
   SUBSCRIBE: {
     PUBLIC: "/chat/public"
